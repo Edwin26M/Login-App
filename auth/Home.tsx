@@ -1,10 +1,20 @@
-import { View, StyleSheet, Text} from "react-native";
+import { View, StyleSheet, Text,TextInput } from "react-native";
+import {ImageSelector} from "@/auth/ImageSelector";
 
 export function Home() {
     return (
         <View style={styles.container}>
+
             <Text style={styles.welcomeText}>¡Bienvenido a la aplicación!</Text>
             <Text style={styles.infoText}>Has iniciado sesión correctamente.</Text>
+            <TextInput
+            style={ { height: 40, borderColor: 'gray', borderWidth: 1, marginTop: 20, width: '100%', paddingHorizontal: 10 } }
+            placeholder="Escribe algo aquí"
+            />
+            <TextInput
+            style={ { height: 40, borderColor: 'gray', borderWidth: 1, marginTop: 20, width: '100%', paddingHorizontal: 10 } }
+            placeholder="Escribe algo más aquí"
+            />
         </View>
     );
 }

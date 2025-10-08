@@ -1,7 +1,15 @@
-import {AppNavigator} from "./auth/navigation/AppNavigator";
+import React from 'react';
+import { AppNavigator } from '@/navigation/AppNavigator';
+import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
+import '@/global.css';
 
 
 export default function App() {
-  return <AppNavigator/>
+  return (
+      <GluestackUIProvider>
+          <AppNavigator />
+      </GluestackUIProvider>
+  );
+
 }
 
